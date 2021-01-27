@@ -1,0 +1,222 @@
+/*
+
+Color Scheme:
+    Blue: #12B3D8
+    Orange: #FF860F
+    Green: #
+    Pink: #
+    Light Gray: #F5F5F5
+    Medium Gray: darkgray
+
+Fonts:
+    Headings:
+        font-family: 'Roboto Slab', serif;
+    
+    Paragraph:
+        font-family: 'Open Sans', sans-serif;
+
+*/
+
+/* ====================================
+        STARTERS
+======================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #212121;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ====================================
+        TYPOGRAPHY
+======================================= */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 0.9 rem;
+  line-height: 1.4;
+}
+
+.sub-item-light {
+  color: darkgray;
+  font-size: 1rem;
+}
+
+.text-highlight {
+  color: #12b3d8;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+
+/* ====================================
+        LAYOUT
+======================================= */
+
+/* --- GENERAL --- */
+
+.limit-content {
+  padding: 2.5rem 4rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* --- NAVIGATION --- */
+
+nav {
+  background-color: #12b3d8;
+  position: fixed;
+  width: 100%;
+  padding: 1rem 4rem;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+/* --- BUTTONS --- */
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1.7rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  box-shadow: inset 0 -0.55em 0 -0.35em rgba(0, 0, 0, 0.17);
+}
+
+.nav-button {
+  color: #12b3d8;
+}
+
+.nav-button,
+.get-in-touch-button {
+  background-color: #b3f90e;
+}
+
+.get-in-touch-button {
+  background-color: #12b3d8;
+  color: white;
+  margin: 1rem;
+}
+
+.get-in-touch-button:hover,
+.nav-button:hover {
+  background-color: #ff860f;
+  color: white;
+}
+
+/* --- HEADER --- */
+
+header section {
+  background-color: #12b3d8;
+  padding: 2rem;
+}
+
+header section img {
+  border-radius: 50%;
+  height: 18rem;
+  margin-top: 3.5rem;
+  border-image: red;
+  border: 0.3rem solid #6eb8d4;
+}
+
+/* --- WORK EXPERIENCE --- */
+
+hr {
+  border-top: 1px dashed #f5f5f5;
+  margin-bottom: 4rem;
+}
+
+.work-item ul li,
+.eager-to-learn-item ul li {
+  margin-bottom: 0.3rem;
+  margin-left: 2rem;
+  list-style-type: circle;
+}
+
+/* --- EDUCATION + INTERESTS --- */
+
+#education,
+#interests {
+  background-color: #f5f5f5;
+}
+
+.work-item,
+.education-item,
+.eager-to-learn-item,
+.interests-item {
+  margin-bottom: 3rem;
+}
+
+.interests-item p {
+  line-height: 1.6;
+  font-size: 0.9rem;
+  width: 70%;
+}
+
+/* --- GET IN TOUCH --- */
+
+#get-in-touch {
+  width: 100%;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+#get-in-touch div {
+  display: flex;
+  justify-content: center;
+}
+
+/* --- FOOTER --- */
+
+footer {
+  background-color: #12b3d8;
+  color: white;
+  padding: 2rem 4rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer section h3 {
+  visibility: hidden;
+  font-size: 0rem;
+}
+
+/* ====================================
+        THE END
+======================================= */
