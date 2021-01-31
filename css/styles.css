@@ -132,6 +132,7 @@ nav {
   background-color: #12b3d8;
   color: white;
   margin: 1rem;
+  font-size: 0.8rem;
 }
 
 .get-in-touch-button:hover,
@@ -233,6 +234,10 @@ footer section h3 {
   h1 {
     line-height: 1.4rem;
     padding: 2rem 0;
+  }
+
+  .get-in-touch-button {
+    font-size: 1rem;
   }
 
   /* --- LAYOUT GENERAL --- */
