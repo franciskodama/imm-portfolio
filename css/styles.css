@@ -89,43 +89,83 @@ p {
   margin: 0 auto;
 }
 
+.limit-content-img {
+  width: 100%;
+}
+
 /* --- NAVIGATION --- */
 
-nav {
+.menu-hamburguer-bar {
   background-color: #12b3d8;
   position: fixed;
+  height: 4rem;
   width: 100%;
-  padding: 1rem 4rem;
-  margin: 0 auto;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  background-color: #b3f90e;
+  position: fixed;
+  width: 100%;
+  height: 60%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 100%;
 }
 
 .nav-list {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
   list-style: none;
+  height: 100%;
+}
+
+.close-nav,
+.open-nav {
+  border: 0;
+  background: 0;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+}
+
+.close-nav {
+  font-size: 3rem;
+  color: #12b3d8;
+  padding: 1rem 2rem;
+  transform: translateX(0);
+  transition: transform 250ms;
+}
+
+.open-nav {
+  font-size: 2.5rem;
+  color: #b3f90e;
+  padding: 0 2rem;
+  margin-left: auto;
+}
+
+.navigation-open {
+  transform: translateX(-100%);
 }
 
 /* --- BUTTONS --- */
 
 .button {
   display: inline-block;
-  padding: 0.5rem 1.7rem;
-  border-radius: 0.3rem;
+  padding: 0.5rem;
   text-align: center;
   text-decoration: none;
   font-weight: 700;
-  margin-left: 0.5rem;
   text-transform: uppercase;
-  box-shadow: inset 0 -0.55em 0 -0.35em rgba(0, 0, 0, 0.17);
 }
 
 .nav-button {
   color: #12b3d8;
-}
-
-.nav-button,
-.get-in-touch-button {
-  background-color: #b3f90e;
+  font-size: 1.2rem;
 }
 
 .get-in-touch-button {
@@ -135,8 +175,7 @@ nav {
   font-size: 0.8rem;
 }
 
-.get-in-touch-button:hover,
-.nav-button:hover {
+.get-in-touch-button:hover {
   background-color: #ff860f;
   color: white;
 }
@@ -150,8 +189,9 @@ header section {
 
 header section img {
   border-radius: 50%;
-  width: 18rem;
+  width: 14rem;
   border: 0.3rem solid #6eb8d4;
+  display: block;
   margin: 3.5rem auto 0 auto;
 }
 
@@ -215,6 +255,7 @@ footer {
 
 footer p {
   text-align: center;
+  font-size: 0.8rem;
 }
 
 footer section h3 {
@@ -225,8 +266,6 @@ footer section h3 {
 /* ====================================
         MEDIA QUERY
 ======================================= */
-
-/* --- GENERAL --- */
 
 @media (min-width: 800px) {
   /* --- TYPOGRAPHY --- */
@@ -240,11 +279,74 @@ footer section h3 {
     font-size: 1rem;
   }
 
-  /* --- LAYOUT GENERAL --- */
+  /* --- LAYOUT --- */
 
   .limit-content {
     padding: 2.5rem 4rem;
     width: 70%;
+  }
+
+  .limit-content-img {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  header section img {
+    width: 18rem;
+    display: block;
+    margin: 6rem 3.5rem 0 3.5rem;
+  }
+
+  /* --- NAVIGATION --- */
+
+  .open-nav,
+  .close-nav {
+    display: none;
+  }
+
+  nav {
+    background-color: #12b3d8;
+    position: fixed;
+    margin: 0 auto;
+    height: 4rem;
+    left: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding-top: 0rem;
+  }
+
+  /* --- BUTTONS --- */
+
+  .button {
+    display: inline-block;
+    padding: 0.5rem 1.7rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    box-shadow: inset 0 -0.55em 0 -0.35em rgba(0, 0, 0, 0.17);
+  }
+
+  .nav-button {
+    color: #12b3d8;
+    font-size: 1rem;
+  }
+
+  .nav-button {
+    background-color: #b3f90e;
+  }
+
+  /* --- FOOTER --- */
+
+  footer p {
+    font-size: 1rem;
   }
 }
 
